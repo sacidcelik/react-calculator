@@ -1,5 +1,9 @@
-export default function CalcButton({ buttonAction, variable, onMathFunction }) {
+export default function CalcButton({
+  buttonAction,
+  buttonValue,
+  onMathFunction,
+}) {
   return (
-    <button onClick={() => onMathFunction(variable)}>{buttonAction}</button>
+    <button onClick={() => onMathFunction(buttonValue)}>{buttonAction}</button>
   );
 }

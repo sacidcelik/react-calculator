@@ -7,8 +7,8 @@ import ResetButton from './ResetButton';
 function App() {
   const [count, setCount] = useState(0);
 
-  function mathFunction(variable) {
-    setCount(count + variable);
+  function mathFunction(buttonValue) {
+    setCount(count + buttonValue);
   }
 
   function resetCount() {
@@ -20,32 +20,32 @@ function App() {
       <Result sum={count} />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={-Math.round(Math.random() * 100)}
+        buttonValue={-Math.round(Math.random() * 100)}
         buttonAction="-random"
       />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={-10}
+        buttonValue={-10}
         buttonAction="-10"
       />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={-1}
+        buttonValue={-1}
         buttonAction="-1"
       />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={1}
+        buttonValue={1}
         buttonAction="+1"
       />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={10}
+        buttonValue={10}
         buttonAction="+10"
       />
       <CalcButton
         onMathFunction={mathFunction}
-        variable={Math.round(Math.random() * 100)}
+        buttonValue={Math.round(Math.random() * 100)}
         buttonAction="+random"
       />
       <section>
