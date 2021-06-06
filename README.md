@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React Calculator
+
+This is a simple React calculator, changing its color based on the result (HSL wheel).
+
+![Screenshot](./reactcalculatorscreenshot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
